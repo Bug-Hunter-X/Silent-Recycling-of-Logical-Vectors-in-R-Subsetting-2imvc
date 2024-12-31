@@ -1,0 +1,2 @@
+# R Silent Recycling Bug
+This repository demonstrates a subtle bug in R related to the silent recycling of logical vectors when used for subsetting data frames.  The bug occurs when a logical vector shorter than the number of rows in a data frame is used for subsetting. R silently recycles the shorter vector, potentially leading to incorrect results without any warning.  The solution showcases how to explicitly check the length of the logical vector and handle potential mismatches.
